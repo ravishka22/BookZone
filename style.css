@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.nobtnout .btn:focus{
+    border: none;
+}
+
+.nobtnout .btn:hover{
+    border: none;
+}
+
+.nobtnout .btn{
+    border: none;  
+}
+
+h5, h6{
+    font-family: "Poppins";
+}
+
+body{
+    background: #ffffff;
+    font-family: "Poppins";
+}
+.table{
+    font-family: "Poppins";
+}
+
+html{
+    font-family: "Poppins"; 
+}
+
+li{
+    font-family: "Poppins"; 
+}
+
+.headerHR{
+    border-top: 2px solid #d9d9d9;
+}
+
+.product-grid .product-image img{ transition: all 0.3s ease 0s; }
+.product-grid:hover .product-image img{ transform: scale(1.1); }
+.product-grid .product-label{
+    top: 10px;
+    left: 10px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.new-label{
+    top: 10px;
+    left: auto;
+    right: 10px;
+    align-self: self-end;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.product-grid .product-links{
+    list-style: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    bottom: -50px;
+    left: 50%;
+    transition: all 0.3s ease 0s;
+}
+.product-grid:hover .product-links{
+    bottom: 40px;
+    opacity: 1;
+}
+.product-grid .product-links li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.nav-item{
+    list-style: none;
+}
+.product-grid .product-links li a{
+    color: #fff;
+    background: #000;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.product-grid:hover .product-links li a:hover{ background: #333; }
+.product-grid .title{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.product-grid .title a{
+    color: #000;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.product-grid .title a:hover{ color: blue; }
+.product-grid .author a{
+    color: #333;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.product-grid .author a:hover{ color: black; }
+.product-grid .price{
+    color:blue;
+    font-size: 16px;
+    font-weight: 500;
+}
+.product-grid .price span{
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin: 0 5px 0 0;
+}
+
+.file{
+    position: relative;
+    overflow: hidden;
+  }
+  .file input {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+  }
+div{
+    font-family: "Poppins";
+ 
+}
+.admin-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    font-family: "Poppins";
+    z-index: 5;
+    
+}
+
+.headerbtn{
+    height: 45px;
+}
+
+
+
+.admin-body{
+    height: 100vh;
+}
+
+.dashbtns li{
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    margin: 0px 0px;
+    text-align: start;
+    align-content: center;
+}
+
+.dashbtns .nav li a{
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    width: 100%;
+    height: 50px;
+}
+
+.dashbtns .nav ul li a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 50px;
+}
+
+th {
+    font-weight: 500;
+}
+
+.rotate-in{
+    transform: rotate(90deg);
+}
+
+
+body {
+    font-family: Roboto, sans-serif;
+}
+  
+#chart {
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+.admin-sidebar{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* .chekoutaddress{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+} */
+
+.starbtn{
+    cursor: pointer;
+}
+
+.sbvTab li{
+    cursor: pointer;
+}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333;
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 10px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    top: 30px; /* 30px from the bottom */
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
